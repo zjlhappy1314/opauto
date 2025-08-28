@@ -19,8 +19,8 @@
 
 /* Colors */
 :root {
-  --color-default: #364d59;
-  --color-primary: #feb900;
+  --color-default: #3a3a3a;
+  --color-primary: #EF4D48;
   --color-secondary: #52565e;
 }
 
@@ -60,6 +60,7 @@ h6 {
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
+
 section {
   padding: 80px 0;
   overflow: hidden;
@@ -75,6 +76,12 @@ section {
 }
 
 .section-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+  color: #2e3135;
+}
+.section-header h1 {
   font-size: 32px;
   font-weight: 700;
   position: relative;
@@ -104,7 +111,7 @@ section {
 
 @media (min-width: 1199px) {
   .section-header p {
-    max-width: 60%;
+    max-width: 70%;
   }
 }
 
@@ -127,9 +134,20 @@ section {
   inset: 0;
 }
 
+.breadcrumbs h1 {
+  font-size: 56px;
+  font-weight: 500;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
 .breadcrumbs h2 {
   font-size: 56px;
   font-weight: 500;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+.breadcrumbs p {
+  font-size: 20px;
   color: #fff;
   font-family: var(--font-secondary);
 }
@@ -207,7 +225,7 @@ section {
   z-index: 999999;
   overflow: hidden;
   background: #fff;
-  transition: all 0.6s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 #preloader:before {
@@ -220,7 +238,7 @@ section {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  animation: animate-preloader 1.5s linear infinite;
+  animation: animate-preloader 1.0s linear infinite;
 }
 
 @keyframes animate-preloader {
@@ -255,7 +273,7 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 70px;
   margin-right: 6px;
 }
 
@@ -559,7 +577,7 @@ section {
 }
 
 .get-started .content p {
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .get-started .php-email-form {
@@ -1861,7 +1879,7 @@ section {
 
 .hero .carousel-item::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(29, 28, 28, 0.7);
   position: absolute;
   inset: 0;
 }
@@ -1882,8 +1900,8 @@ section {
   color: #fff;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  font-size: 56px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 400;
   position: relative;
 }
 
@@ -2558,7 +2576,7 @@ section {
 --------------------------------------------------------------*/
 .footer {
   color: #fff;
-  background: url("../img/footer-bg.jpg") top center no-repeat;
+  background: url("../img/footer-bg.webp") top center no-repeat;
   background-size: cover;
   font-size: 14px;
   padding: 80px 0 60px 0;
@@ -2665,4 +2683,80 @@ section {
 
 .footer .footer-legal .credits a {
   color: var(--color-primary);
+}
+
+.custom-btn-products {
+  background-color: #EF4D48;
+  border-color: #EF4D48;
+  color: white; /* 确保文字颜色为白色，以便清晰可见 */
+}
+
+.custom-btn-products:hover {
+  background-color: #d13d39; /* 可选：为鼠标悬停状态设置一个稍微深一点的颜色 */
+  border-color: #d13d39;
+}
+
+/* Sidebar
+================================================== */
+.sidebar .widget-title {
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  margin: 0 0 30px;
+  padding-left: 15px;
+  text-transform: uppercase;
+  border-left: 3px solid #ffb600;
+}
+
+/* Widget common */
+.sidebar .widget {
+  margin-bottom: 40px;
+}
+
+.sidebar-left .widget {
+  margin-right: 20px;
+}
+
+.sidebar-right .widget {
+  margin-left: 20px;
+}
+
+.sidebar .widget.box {
+  padding: 25px;
+}
+
+.widget.box.solid {
+  background: #f2f2f2;
+}
+
+.widget.box.red {
+  background: #ec483b;
+  color: #fff;
+}
+
+.widget.box.red .widget-title {
+  color: #fff;
+}
+
+.widget ul li {
+  line-height: 30px;
+}
+
+.sidebar .widget ul li a {
+  color: #303030;
+}
+
+.sidebar .widget ul li a:hover {
+  color: #ffb600;
+}
+
+.sidebar .widget ul li i {
+  margin-right: 5px;
+}
+
+.sidebar .btn {
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 15px;
+  padding: 10px 25px;
 }
