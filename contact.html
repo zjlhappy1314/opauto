@@ -163,28 +163,38 @@
           </div><!-- End Google Maps -->
 
           <div class="col-lg-6">
-            <form action="https://formspree.io/f/xqapawpq" method="post" role="form" class="php-email-form">
-              <div class="row gy-4">
-                <div class="col-lg-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-lg-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
+            <form id="contact-form" action="https://formspree.io/f/xqapawpq" method="post" role="form">
+              <div class="error-container"></div>
+          <div class="row">
+            <div class="col-md-4">
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <label>Name</label>
+                <input class="form-control form-control-name" name="name" id="name" placeholder="" type="text" required>
               </div>
+            </div>
+            <div class="col-md-4">
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <label>Email</label>
+                <input class="form-control form-control-email" name="email" id="email" placeholder="" type="email"
+                  required>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Subject</label>
+                <input class="form-control form-control-subject" name="subject" id="subject" placeholder="" required>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea class="form-control form-control-message" name="message" id="message" placeholder="" rows="10"
+              required></textarea>
+          </div>
+          <div class="text-right"><br>
+            <button class="btn btn-primary solid blank" type="submit">Send Message</button>
+          </div>
+        </form>
           </div><!-- End Contact Form -->
 
         </div>
