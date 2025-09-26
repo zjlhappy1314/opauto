@@ -2749,3 +2749,17 @@ section {
   margin-top: 15px;
   padding: 10px 25px;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* This ensures the borders are single lines */
+  margin-top: 20px;
+}
+th, td {
+  border: 1px solid #ddd; /* This adds a 1px solid border with a light grey color */
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
